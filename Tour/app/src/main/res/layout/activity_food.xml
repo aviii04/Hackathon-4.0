@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context="com.example.bhrugvishvakil.tour.food">
+
+    <Button
+        android:id="@+id/restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/restaurant"
+        android:layout_marginTop="72dp"
+        android:background="#7F64C1"
+        android:text="RESTAURANT "
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/street"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/restaurant"
+        android:layout_marginTop="99dp"
+        android:background="#7F64C1"
+        android:text="STREET FOOD"
+        android:textColor="#ffffff" />
+
+
+    <Button
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/street"
+        android:layout_marginTop="99dp"
+        android:background="#7F64C1"
+        android:text="BAR"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/veg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/restaurant"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="32dp"
+        android:text="VEG" />
+
+    <Button
+        android:id="@+id/nonveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/veg"
+        android:layout_alignTop="@+id/restaurant"
+        android:layout_marginTop="42dp"
+        android:text="NON_VEG" />
+
+</RelativeLayout>

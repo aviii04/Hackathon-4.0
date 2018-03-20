@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context="com.example.bhrugvishvakil.tour.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignStart="@+id/imageViewtour"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"></android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/tour"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/Food"
+        android:layout_alignBottom="@+id/Food"
+        android:layout_alignStart="@+id/imageViewtour"
+        android:background="#7F64C1"
+        android:text="Tour"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/fair"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/imageViewfair"
+        android:layout_alignTop="@+id/Emg"
+        android:background="#7F64C1"
+        android:text="Fair And Festival"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/Food"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Result"
+        android:layout_alignStart="@+id/imageViewfood"
+        android:background="#7F64C1"
+        android:text="Food"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/Emg"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageViewfair"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="22dp"
+        android:background="#7F64C1"
+        android:text="Emergency"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:textAlignment="center"
+        android:textColor="#551a8b"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageViewtour"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view_pager"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/tour" />
+
+    <ImageView
+        android:id="@+id/imageViewfood"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/Result"
+        android:layout_alignTop="@+id/imageViewtour"
+        app:srcCompat="@drawable/food" />
+
+    <ImageView
+        android:id="@+id/imageViewfair"
+        android:layout_width="95dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/imageViewfood"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/imageViewfood"
+        app:srcCompat="@drawable/festival" />
+
+    <ImageView
+        android:id="@+id/imageViewemg"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/Emg"
+        android:layout_alignTop="@+id/imageViewfair"
+        app:srcCompat="@drawable/emergency" />
+
+    <EditText
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fair"
+        android:layout_marginStart="18dp"
+
+
+        android:layout_marginTop="64dp"
+        android:layout_toEndOf="@+id/tour"
+        android:ems="10"
+        android:hint="Range"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#551a8b"
+        android:textColorHint="#551a8b" />
+
+</RelativeLayout>
